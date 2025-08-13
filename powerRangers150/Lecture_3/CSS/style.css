@@ -1,0 +1,28 @@
+h1{
+    color: red;
+    background-color: aquamarine;
+}
+div{
+    color: blanchedalmond;
+    
+
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+fieldset{
+    background-color: teal;
+
+}
+
+img{
+    background-color: burlywood;
+    size: 50px;
+}
+
+video{
+    background-color: brown;
+    width: 300px;
+}
