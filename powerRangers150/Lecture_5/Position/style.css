@@ -1,0 +1,51 @@
+div {
+    display:inline-block;
+    border: 1px solid black;
+    margin: 5q;
+    width: 100px;
+    height: 100px;
+}
+
+#relative #middle {
+    position: relative;
+    /* top: 50px;
+    left: 50px; */
+}
+
+#absolute {
+    position: relative;
+    border: 1px solid green;
+    /* left: 50px; */
+}
+
+#absolute #middle {
+    position: absolute;
+   
+    
+}
+
+#fixed #middle {
+    position: fixed;
+    /* top: 50px; */
+    /* left: 50px; */
+    top: 0px;
+    border: 1px solid blue;
+}
+
+#sticky {
+    height: 200px;
+    border: 1px solid orange;
+}
+
+#sticky #middle {
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    border: 1px solid purple;
+}
+
+body {
+    background-color: lightblue;
+    border: 1px solid red;
+}
+
