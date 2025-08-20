@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete CSS Notes - Hindi mein Examples ke saath</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #e74c3c;
+            margin-top: 40px;
+            padding: 10px 0;
+            border-left: 5px solid #e74c3c;
+            padding-left: 15px;
+        }
+
+        .example-box {
+            background-color: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .code-snippet {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        /* Text Properties Examples */
+        .blue-text { color: blue; }
+        .red-text { color: red; }
+        .green-text { color: green; }
+        .purple-text { color: #8e44ad; }
+        .orange-text { color: orange; }
+
+        .small-text { font-size: 12px; }
+        .normal-text { font-size: 16px; }
+        .large-text { font-size: 24px; }
+        .huge-text { font-size: 36px; }
+
+        .serif-font { font-family: serif; }
+        .sans-serif-font { font-family: sans-serif; }
+        .monospace-font { font-family: monospace; }
+        .custom-font { font-family: 'Arial', sans-serif; }
+
+        .light-weight { font-weight: 300; }
+        .normal-weight { font-weight: normal; }
+        .bold-weight { font-weight: bold; }
+        .extra-bold { font-weight: 900; }
+
+        .left-align { text-align: left; }
+        .center-align { text-align: center; }
+        .right-align { text-align: right; }
+        .justify-align { text-align: justify; }
+
+        .underline-text { text-decoration: underline; }
+        .overline-text { text-decoration: overline; }
+        .line-through { text-decoration: line-through; }
+        .no-decoration { text-decoration: none; }
+
+        .uppercase-text { text-transform: uppercase; }
+        .lowercase-text { text-transform: lowercase; }
+        .capitalize-text { text-transform: capitalize; }
+
+        .tight-spacing { letter-spacing: -1px; }
+        .normal-spacing { letter-spacing: normal; }
+        .loose-spacing { letter-spacing: 3px; }
+
+        .tight-line { line-height: 1; }
+        .normal-line { line-height: 1.5; }
+        .loose-line { line-height: 2.5; }
+
+        /* Background Properties */
+        .bg-color { background-color: #3498db; color: white; padding: 10px; }
+        .bg-gradient { background: linear-gradient(45deg, #e74c3c, #f39c12); color: white; padding: 10px; }
+        .bg-image { 
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23ff6b6b"/></svg>');
+            background-size: 50px 50px;
+            background-repeat: repeat;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Border Properties */
+        .solid-border { border: 2px solid #e74c3c; padding: 10px; }
+        .dashed-border { border: 3px dashed #3498db; padding: 10px; }
+        .dotted-border { border: 4px dotted #2ecc71; padding: 10px; }
+        .rounded-border { border: 2px solid #9b59b6; border-radius: 15px; padding: 10px; }
+        .custom-borders { 
+            border-top: 3px solid red; 
+            border-right: 3px solid blue; 
+            border-bottom: 3px solid green; 
+            border-left: 3px solid orange; 
+            padding: 10px; 
+        }
+
+        /* Margin & Padding Examples */
+        .margin-example { 
+            background-color: #e8f5e8; 
+            margin: 20px; 
+            padding: 15px; 
+            border: 2px solid #27ae60;
+        }
+        .padding-example { 
+            background-color: #fef9e7; 
+            padding: 30px 15px; 
+            border: 2px solid #f39c12;
+        }
+
+        /* Display Properties */
+        .block-element { display: block; background-color: #3498db; color: white; padding: 10px; margin: 5px 0; }
+        .inline-element { display: inline; background-color: #e74c3c; color: white; padding: 5px; margin: 0 5px; }
+        .inline-block { display: inline-block; background-color: #2ecc71; color: white; padding: 10px; margin: 5px; }
+        .flex-container { display: flex; gap: 10px; }
+        .flex-item { flex: 1; background-color: #9b59b6; color: white; padding: 20px; text-align: center; }
+        .grid-container { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+        .grid-item { background-color: #34495e; color: white; padding: 20px; text-align: center; }
+
+        /* Position Properties */
+        .relative-parent { position: relative; background-color: #ecf0f1; height: 100px; border: 2px solid #95a5a6; }
+        .absolute-child { position: absolute; top: 10px; right: 10px; background-color: #e74c3c; color: white; padding: 5px; }
+        .fixed-element { position: fixed; top: 10px; right: 10px; background-color: #2ecc71; color: white; padding: 10px; z-index: 1000; }
+
+        /* Float Properties */
+        .float-left { float: left; background-color: #3498db; color: white; padding: 10px; margin: 10px; }
+        .float-right { float: right; background-color: #e74c3c; color: white; padding: 10px; margin: 10px; }
+        .clearfix::after { content: ""; display: table; clear: both; }
+
+        /* Hover Effects */
+        .hover-effect { 
+            padding: 15px; 
+            background-color: #3498db; 
+            color: white; 
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .hover-effect:hover { 
+            background-color: #2c3e50; 
+            transform: scale(1.05);
+        }
+
+        /* Animation Example */
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+
+        /* Shadow Effects */
+        .box-shadow { 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+            padding: 20px; 
+            background-color: white; 
+            margin: 20px 0;
+        }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 24px; }
+
+        /* Media Query Example */
+        @media (max-width: 768px) {
+            .container { padding: 15px; }
+            h1 { font-size: 24px; }
+        }
+
+        /* Table Styling */
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .styled-table th, .styled-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .styled-table th {
+            background-color: #3498db;
+            color: white;
+        }
+        .styled-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Form Styling */
+        .styled-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px 0;
+            transition: border-color 0.3s;
+        }
+        .styled-input:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        .styled-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .styled-button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Complete CSS Properties Guide - Examples ke saath</h1>
+        
+        <h2>1. Text Colors aur Font Properties</h2>
+        <div class="example-box">
+            <p class="blue-text">Yeh paragraph blue color mein hai</p>
+            <p class="red-text">Red colored text</p>
+            <p class="green-text">Green colored text</p>
+            <p class="purple-text">Purple colored text</p>
+            <p class="orange-text">Orange colored text</p>
+        </div>
+
+        <div class="code-snippet">
+.blue-text { color: blue; }
+.red-text { color: red; }
+.green-text { color: green; }
+        </div>
+
+        <h2>2. Font Sizes aur Typography</h2>
+        <div class="example-box">
+            <p class="small-text">Small text (12px)</p>
+            <p class="normal-text">Normal text (16px)</p>
+            <p class="large-text">Large text (24px)</p>
+            <p class="huge-text">Huge text (36px)</p>
+        </div>
+
+        <h2>3. Font Families</h2>
+        <div class="example-box">
+            <p class="serif-font">Serif font family</p>
+            <p class="sans-serif-font">Sans-serif font family</p>
+            <p class="monospace-font">Monospace font family</p>
+            <p class="custom-font">Custom Arial font</p>
+        </div>
+
+        <h2>4. Font Weight</h2>
+        <div class="example-box">
+            <p class="light-weight">Light weight text (300)</p>
+            <p class="normal-weight">Normal weight text</p>
+            <p class="bold-weight">Bold weight text</p>
+            <p class="extra-bold">Extra bold text (900)</p>
+        </div>
+
+        <h2>5. Text Alignment</h2>
+        <div class="example-box">
+            <p class="left-align">Left aligned text (default)</p>
+            <p class="center-align">Center aligned text</p>
+            <p class="right-align">Right aligned text</p>
+            <p class="justify-align">Justified text - yeh text justify hai aur equally spaced hai dono sides mein, dekho kaise yeh properly align ho raha hai.</p>
+        </div>
+
+        <h2>6. Text Decoration</h2>
+        <div class="example-box">
+            <p class="underline-text">Underlined text</p>
+            <p class="overline-text">Overlined text</p>
+            <p class="line-through">Strikethrough text</p>
+            <a href="#" class="no-decoration">Link without underline</a>
+        </div>
+
+        <h2>7. Text Transform</h2>
+        <div class="example-box">
+            <p class="uppercase-text">uppercase text example</p>
+            <p class="lowercase-text">LOWERCASE TEXT EXAMPLE</p>
+            <p class="capitalize-text">capitalize text example</p>
+        </div>
+
+        <h2>8. Letter Spacing aur Line Height</h2>
+        <div class="example-box">
+            <p class="tight-spacing">Tight letter spacing example</p>
+            <p class="normal-spacing">Normal letter spacing example</p>
+            <p class="loose-spacing">Loose letter spacing example</p>
+            
+            <p class="tight-line">Tight line height - yeh text tight spacing ke saath hai.</p>
+            <p class="normal-line">Normal line height - yeh text normal spacing ke saath hai.</p>
+            <p class="loose-line">Loose line height - yeh text loose spacing ke saath hai.</p>
+        </div>
+
+        <h2>9. Background Properties</h2>
+        <div class="example-box">
+            <div class="bg-color">Background color example</div><br>
+            <div class="bg-gradient">Background gradient example</div><br>
+            <div class="bg-image">Background pattern example</div>
+        </div>
+
+        <div class="code-snippet">
+.bg-color { background-color: #3498db; }
+.bg-gradient { background: linear-gradient(45deg, #e74c3c, #f39c12); }
+        </div>
+
+        <h2>10. Border Properties</h2>
+        <div class="example-box">
+            <div class="solid-border">Solid border example</div><br>
+            <div class="dashed-border">Dashed border example</div><br>
+            <div class="dotted-border">Dotted border example</div><br>
+            <div class="rounded-border">Rounded border example</div><br>
+            <div class="custom-borders">Custom borders on each side</div>
+        </div>
+
+        <h2>11. Margin aur Padding</h2>
+        <div class="example-box">
+            <div class="margin-example">Margin example - bahar se space</div>
+            <div class="padding-example">Padding example - andar se space</div>
+        </div>
+
+        <div class="code-snippet">
+.margin-example { margin: 20px; }
+.padding-example { padding: 30px 15px; }
+        </div>
+
+        <h2>12. Display Properties</h2>
+        <div class="example-box">
+            <div class="block-element">Block element</div>
+            <div class="block-element">Another block element</div>
+            
+            <span class="inline-element">Inline</span>
+            <span class="inline-element">Elements</span>
+            <span class="inline-element">Side by side</span>
+            
+            <br><br>
+            
+            <div class="inline-block">Inline-block 1</div>
+            <div class="inline-block">Inline-block 2</div>
+        </div>
+
+        <h2>13. Flexbox Layout</h2>
+        <div class="example-box">
+            <div class="flex-container">
+                <div class="flex-item">Flex Item 1</div>
+                <div class="flex-item">Flex Item 2</div>
+                <div class="flex-item">Flex Item 3</div>
+            </div>
+        </div>
+
+        <div class="code-snippet">
+.flex-container { display: flex; gap: 10px; }
+.flex-item { flex: 1; }
+        </div>
+
+        <h2>14. Grid Layout</h2>
+        <div class="example-box">
+            <div class="grid-container">
+                <div class="grid-item">Grid 1</div>
+                <div class="grid-item">Grid 2</div>
+                <div class="grid-item">Grid 3</div>
+            </div>
+        </div>
+
+        <h2>15. Position Properties</h2>
+        <div class="example-box">
+            <div class="relative-parent">
+                Relative parent element
+                <div class="absolute-child">Absolute child</div>
+            </div>
+        </div>
+
+        <h2>16. Float Properties</h2>
+        <div class="example-box clearfix">
+            <div class="float-left">Float left</div>
+            <div class="float-right">Float right</div>
+            <p>Yeh text floated elements ke niche hai.</p>
+        </div>
+
+        <h2>17. Hover Effects</h2>
+        <div class="example-box">
+            <div class="hover-effect">Hover karo mujh par!</div>
+        </div>
+
+        <h2>18. Animation Example</h2>
+        <div class="example-box">
+            <div class="animated-box"></div>
+            <p>Yeh box bounce kar raha hai!</p>
+        </div>
+
+        <h2>19. Shadow Effects</h2>
+        <div class="example-box">
+            <div class="box-shadow">Box shadow example</div>
+            <p class="text-shadow">Text shadow example</p>
+        </div>
+
+        <h2>20. Table Styling</h2>
+        <div class="example-box">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>color</td>
+                        <td>red</td>
+                        <td>Text color set karta hai</td>
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>16px</td>
+                        <td>Font size set karta hai</td>
+                    </tr>
+                    <tr>
+                        <td>background</td>
+                        <td>blue</td>
+                        <td>Background color set karta hai</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>21. Form Styling</h2>
+        <div class="example-box">
+            <input type="text" class="styled-input" placeholder="Enter your name">
+            <input type="email" class="styled-input" placeholder="Enter your email">
+            <button class="styled-button">Submit Button</button>
+        </div>
+
+        <h2>22. Important CSS Units</h2>
+        <div class="example-box">
+            <div class="code-snippet">
+/* Absolute Units */
+px - pixels (most common)
+pt - points 
+cm - centimeters
+mm - millimeters
+
+/* Relative Units */
+em - relative to font size
+rem - relative to root font size
+% - percentage
+vh - viewport height
+vw - viewport width
+            </div>
+        </div>
+
+        <h2>23. CSS Selectors Quick Reference</h2>
+        <div class="example-box">
+            <div class="code-snippet">
+/* Element Selector */
+p { color: red; }
+
+/* Class Selector */
+.my-class { color: blue; }
+
+/* ID Selector */
+#my-id { color: green; }
+
+/* Descendant Selector */
+div p { color: purple; }
+
+/* Child Selector */
+div > p { color: orange; }
+
+/* Pseudo-classes */
+a:hover { color: red; }
+p:first-child { font-weight: bold; }
+            </div>
+        </div>
+
+        <h2>24. Media Queries for Responsive Design</h2>
+        <div class="example-box">
+            <div class="code-snippet">
+/* Mobile First Approach */
+@media (min-width: 768px) {
+    .container { max-width: 750px; }
+}
+
+@media (min-width: 992px) {
+    .container { max-width: 970px; }
+}
+
+@media (min-width: 1200px) {
+    .container { max-width: 1170px; }
+}
+            </div>
+        </div>
+
+        <div class="fixed-element">Fixed Element</div>
+    </div>
+</body>
+</html>

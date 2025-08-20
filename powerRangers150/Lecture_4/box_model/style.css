@@ -1,0 +1,22 @@
+span,h1{
+    width: 100px;
+    height: 100px;
+    border: 15px solid black;
+    padding: 10px;
+    margin: 10px;
+    /* Box-sizing: content-box */
+    box-sizing: border-box;
+    /* Will cause the compromise in the size of content */
+}
+
+span {
+    display: inline-block;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    visibility: hidden; /* This will hide the element but it will still take up space */
+    /* display: none;  */ /* This will remove the element from the document flow */
+}
