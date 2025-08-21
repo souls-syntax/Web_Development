@@ -1,3 +1,4 @@
+
 *Browser Have three types of engine*
 1. Layout
 2. JS
@@ -127,7 +128,7 @@ We can add subscript and superscripts om HTML as follows:
 
 *pre tag*
 
-HTML alwaus ignores extra spaces and newlines. In oreder to display a piece of text as is, we can use pre tag.
+HTML always ignores extra spaces and newlines. In order to display a piece of text as is, we can use pre tag.
 
 <pre>
     This is formated text
@@ -140,7 +141,7 @@ Code writing principle
 * DRY = Don't repeat yourself (The developers choice)
 * WET = Write everything twice (The masochist choice) {Used by those who use inline CSS}
 Principle of SOC
-* SOC = Seperation of concern (Don't make a khidchi make different files for HTML and CSS instead of using internal or inline)
+* SOC = Seperation of concern (Don't make a mess, make different files for HTML and CSS instead of using internal or inline)
 **
 
 
@@ -226,7 +227,7 @@ td tag: used to display table data
 **colspan attribute**
 
 This attribute is used to create cells spanning multiple columns.
-<th colspan="3">Harry(spans 3 colums)(/th)
+<th colspan="3">parry(spans 3 colums)</th>
 
 *HTML forms*
 An HTML form is use dto collect input from the user form tag is used for the same
@@ -248,12 +249,8 @@ Video tag is used to play vidoes in HTML
 ```HTML
 <video width="500" controls muted loop autoplay src="../fastlogo/jhinsi1.mp4"></video>
 ```
-Height auto adjust
+Height auto adjust.
 
-**kjbkjjdscbcjkab**
-*fsuigsfkljvkjgvsd*
-* dviluhsf
-1. sdhivbsdkc
-`csjkbhsdvv`
-*`da,kbadk.jdjb`*
-**`da,kbadk.jdjb`**
+
+
+
