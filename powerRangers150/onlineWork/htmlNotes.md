@@ -13,7 +13,9 @@ Ohh revision of thought it's actually practically incoded in HTML like you can j
 ------------------------------------------
 
 *Type of tags*
-
+There are two types of tags:
+1. Inline tag
+2. Block tag
 
 ------------------------------------------
 *Attributes*
@@ -35,7 +37,7 @@ JS is a programming language which is used to add logic and functionality to the
 
 
 *A Basic HTML page*
-"
+```HTML
 <!DOCTYPE html>   --- Specifies this is an HTML 5 file
 <html lang="en"> --- root of an HTML page
 <head> ----- Contains Page metadata
@@ -48,8 +50,7 @@ JS is a programming language which is used to add logic and functionality to the
     <p>My paragraph</p> --- Paragraph tag
 </body> - closing body tag
 </html>
-"
-
+```
 
 Tag -> A tag is like a container for either content or other HTML tags
 
@@ -67,11 +68,11 @@ HTML is case insensitive language
 *HTML Element*
 
 Everything form starting to the ending tag
-
+```HTML
 <body>
 content
 </body>
-
+```
 *HTML Attributes*
 
 Used to add more info corresponding to an HTML tag.
@@ -130,7 +131,7 @@ HTML alwaus ignores extra spaces and newlines. In oreder to display a piece of t
 
 <pre>
     This is formated text
-        Will sbe displayed as it is 
+        Will be displayed as it is 
 </pre>
 
 
@@ -154,6 +155,7 @@ Span is an inline container.
 
 
 ---------------------------------
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -184,21 +186,21 @@ Span is an inline container.
     </fieldset>
 </body>
 </html>
+```
 ---------------------------------
 
 
 **List tables and forms**
 
-List
 List are used to display content which represnts a list
 
-Unordered list: used to list unordered items
+*Unordered list*: used to list unordered items
 <ul>
     <li>Home</li>
     <li>aboutM</li>
 </ul>
 
-Ordered list: used to list ordered items
+*Ordered list*: used to list ordered items
     <ol>
         <li></li>
     </ol>
@@ -208,20 +210,20 @@ Ordered list: used to list ordered items
 The <table> tag is used to define tables in HTML.
 It is used to format and display tabular data
 
-tr tag: used to display table row
+*tr* tag: used to display table row
 td tag: used to display table data
 
-th tag: use in places of table data for displaying table headers
+*th* tag: use in places of table data for displaying table headers
 
-we can define as many table rows as we want
+*we* can define as many table rows as we want
 
-To add a caption to the table, we use <caption> tag inside table.
+*To* add a caption to the table, we use <caption> tag inside table.
 
-thead tag: Used to warp table head (Caption and tr with th)
+*thead* tag: Used to warp table head (Caption and tr with th)
 
-tbody tag: Used to warp the table body
+*tbody* tag: Used to warp the table body
 
-*colspan attribute*
+**colspan attribute**
 
 This attribute is used to create cells spanning multiple columns.
 <th colspan="3">Harry(spans 3 colums)(/th)
@@ -243,9 +245,9 @@ There are different form elements for different kinds of user input
 
 *Embedding Videos*
 Video tag is used to play vidoes in HTML 
-
+```HTML
 <video width="500" controls muted loop autoplay src="../fastlogo/jhinsi1.mp4"></video>
-
+```
 Height auto adjust
 
 **kjbkjjdscbcjkab**

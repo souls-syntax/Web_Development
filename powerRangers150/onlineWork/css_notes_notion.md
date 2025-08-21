@@ -1,12 +1,37 @@
 # CSS Notes
 
+# 1. *CSS* (Casceding style sheet)
+Could be used in 3 ways
+
+1. Inline
+2. Internal
+3. External
+
+*Inline*
+used keyword is `style`
+use using key value pair
+
+**Key:Value**
+
+----------------
+Code writing principle
+* DRY = Don't repeat yourself (The developers choice)
+* WET = Write everything twice (The masochist choice) {Used by those who use inline CSS}
+Principle of SOC
+* SOC = Seperation of concern (Don't make a mess, make different files for HTML and CSS instead of using internal or inline)
+----------------
+
+*Internal*
+
+
+The hirerachy
+inline > internal > external
+
+
+Internal CSS should generally be after the external file linking line
 
 ---
 # 1. CSS Syntax
-
-CSS rule-set has three parts: - **Selector** → The HTML element you want
-to style. - **Property** → The attribute you want to change (e.g.,
-color, font-size). - **Value** → The value of that property.
 
 >  **Example:**
 
@@ -17,10 +42,7 @@ h1 {
 }
 ```
 
-------------------------------------------------------------------------
-
-
----
+---------------------------------------------------------------------------
 #  2. Types of CSS
 
 1.  **Inline CSS** → Written inside an element's `style` attribute.
@@ -229,9 +251,6 @@ div {
 ```
 
 ------------------------------------------------------------------------
-
-
----
 #  8. Text Properties
 
 1.  **color**
@@ -426,20 +445,11 @@ div { position: absolute; top: 20px; left: 30px; }
 ------------------------------------------------------------------------
 
 
----
-#  17. Media Queries (Responsive Design)
-
-``` css
-@media (max-width: 768px) {
-  body { background-color: lightgreen; }
-}
-```
-
 ------------------------------------------------------------------------
 
 
 ---
-#  18. Z-index
+#  17. Z-index
 
 -   Controls stacking order of elements
 -   Higher value = on top
@@ -447,3 +457,37 @@ div { position: absolute; top: 20px; left: 30px; }
 ``` css
 div { z-index: 10; position: relative; }
 ```
+
+
+## Other Works
+
+**Position**
+id, class are attribute of elements
+
+> use id for only one element(Unique identification)
+> use class for more than one element(Generic identification)
+
+
+**Box Model**
+
+* Element area = Content area + Padding area + Border
+// Margin is not part of Element.
+
+Box model = content+padding+border+margin 
+
+-----------------
+-               -
+-   ---------   -
+-           -   -
+-   --------    -
+-               -
+-----------------
+
+*Position Property*
+There are 5 position property
+
+1. Static
+2. Relative
+3. Absolute
+4. Fixed
+5. Sticky
