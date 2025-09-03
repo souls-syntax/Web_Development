@@ -14,7 +14,7 @@ use using key value pair
 **Key:Value**
 
 ----------------
-Code writing principle
+## Code writing principle
 * DRY = Don't repeat yourself (The developers choice)
 * WET = Write everything twice (The masochist choice) {Used by those who use inline CSS}
 Principle of SOC
