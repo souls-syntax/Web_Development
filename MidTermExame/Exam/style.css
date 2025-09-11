@@ -1,0 +1,40 @@
+
+
+.fu {
+    display: flex;
+}
+
+#about {
+    text-align: center;
+}
+
+#HomePage {
+    text-align: center;
+}
+
+.name {
+    display: flex;
+    text-align: right;
+}
+
+.sus {
+    text-align: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.Skills {
+    text-align: center;
+}
+
+.CertificationH {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    margin-left: 2rem;
+    gap: 2rem;
+}
