@@ -39,7 +39,7 @@ Functional components are static but since it was easy the devs created builtin 
 So basically components are just functions.
 The components can only return JSX.
 
-```jsx
+```tsx
 
 function Sam() {
    return{
@@ -47,7 +47,7 @@ function Sam() {
     ... 
     </div>
     
-} 
+    } 
 }
 
 
